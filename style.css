@@ -1,0 +1,213 @@
+:root{
+    --main-color:snow;
+}
+@font-face{
+    font-family: baskerville;
+    src: url(font/LibreBaskerville-Regular.ttf);
+}
+img{
+    width: 50px; /* taille horizontale de l'image */
+    height:  70px; /* taille verticale de l'image */
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 7px;
+    z-index: 1;
+    
+}
+.header{
+    display: flex;
+    margin-left:  7px;
+    margin-right:  7px;
+    background-color: burlywood;
+    gap: 15px;
+    
+
+}
+
+body{
+    background-color: blanchedalmond;
+}
+ul {
+    list-style:none;
+    margin: 5px;
+    margin-top: 9px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: snow;
+} 
+ul li{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    color:crimson;
+}
+.pomsky-adulte-chiot{
+    display: flex;
+}
+.pomsky-adulte-chiot{
+    display: flex;
+    justify-content: space-around;
+}
+a:hover {
+    color: blue;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family:'baskerville' ;
+  
+  }
+    
+   
+    
+    .container-grid{
+        display: grid;/* initialise le tableau grid*/
+        grid-template-columns: 1fr 2fr 3fr;/*crée 3 colonnes de la taille que l'on souhaite*/
+        grid-template-rows: 100px 150px 200px;
+        gap: 10px;
+    }
+    .box{
+        height: 
+        border 1px solid red;
+        background-color: blanchedalmond;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .container-grid1{
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        gap: 10px;
+        
+    }
+    .one{
+        display: flex;
+        border: 1px solid black;
+        grid-column: 1/4;
+      
+    }
+    .two{
+        border:1px solid black;
+        grid-column: 1/3;
+       
+
+    }
+    .three{
+        border: 1px solid black;
+        grid-column: 3/4;
+        grid-row: 2/4
+    }
+    .four{
+        border: 1px solid black;
+        grid-column: 1/2;
+    }
+    .five{
+        border: 1px solid black;
+        grid-column: 2/3;
+    }
+    .six{
+        border: 1px solid black;
+        grid-column: 1/3;
+    }
+    .seven{
+        border: 1px solid black;
+        grid-column: 3/4;
+    }
+    .height{
+        border: 1px solid black;
+        grid-column: 1/4;
+    }
+    th,td{
+        border: 1px solid black;
+       padding: 10px;
+       height: 30px;
+       width: 30px;
+      
+    }
+    table{
+        border-collapse: collapse;
+        margin:auto;
+    }
+
+
+    .bas-de-page{
+        position: absolute;
+        bottom: 0;
+       
+    }
+    :required{
+        background-color:darkgray;
+    }
+  
+
+    .menu {
+        /* Pour que le menu reste en place quand on scroll */
+        position: fixed;
+        /* Pour que le menu ne soit pas sur le texte et que ce dernier puisse être sélectionné */
+        width: 0px;
+        
+      }
+      #hamburger {
+        /* Pour que la checkbox ne s'affiche pas */
+        display: none;
+      }
+      
+      #hamburger-logo {
+        /* Pour que le curseur soit un pointeur */
+        cursor: pointer;
+        background: burlywood;
+        width: 200px;
+        display: block;
+        color: brown;
+        /* Pour que le menu hamburger s'affiche toujours */
+        text-align: right;
+        /* Pour que le menu hamburger soit "rangé" par défaut */
+        transform: translateX(-168px);
+        padding: 10px;
+      }
+      
+      .menu-burger{
+    
+        display: flex;
+        flex-direction: column;
+        background-color: burlywood;
+        overflow: hidden;
+        width: 200px;
+        /* Pour que les liens soient "rangés" par défaut */
+        transform: translateX(-200px);
+
+      }
+      
+      /* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+      #hamburger:checked ~ #hamburger-logo,
+      #hamburger:checked ~ nav {
+        /* Changement de la position pour afficher les menus */
+        transform: translate(0);
+      }
+      #hamburger-logo,
+      .menu-burger{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        transition: 0.7s; /* Pour qu'il y ait une animation */
+      }
+      
+      .menu-burger:hover {
+        background-color:darksalmon;
+      }
+      @media screen and (max-width:800px) {
+        .link{
+            display: none;
+        }
+        .menu-burger{
+            display: block;
+        }
+      }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="https://kit.fontawesome.com/30cd7b95f8.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+<title>Html/CSS</title>
+<body>
+<header>
+    <div>
+        <div class="header">
+            <img id="ancre" src="image/pomsky.jpeg" alt="chien noir et blanc assis sur une souche d'arbre">
+            <div>
+            <nav class="link">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Navigation/nos toutous adultes.html">Nos toutous adultes</a></li>
+                    <li><a href="Navigation/les portées.html">Les portées</a></li>
+                    <li><a href="Navigation/nos chiots.html">Nos chiots</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        
+    </div>
+   <!-- Menu sur le côté -->
+  <div class="menu">
+    <!-- Utilisation d'une checkbox -->
+    <input type="checkbox" id="hamburger">
+    <!-- Label de la checkbox -->
+    <label id="hamburger-logo" for="hamburger">☰</label>
+    <!-- Le reste du menu -->
+    <nav class="menu-burger">
+      <a href="index.html">Accueil</a>
+      <a href="Navigation/nos toutous adultes.html">Nos toutous adultes</a>
+      <a href="Navigation/les portées.html">Les portées</a>
+      <a href="Navigation/nos chiots.html">Nos chiots</a>
+    </nav>
+  </div>
+
+</header>
+    <h1>Pomsky</h1>
+    <main>
+        <section class="pomsky-adulte-chiot">
+            <img src="image/pomsky adulte.jpeg" alt="">
+            <img src="image/pomsky chiot.jpeg" alt="">
+        </section>
+    </main>
+    <section>
+        <ol>
+            <li><a href="nos couleurs de chiots">Nos couleurs de chiots</a></li>
+            <li> <a href="l'âge des toutous">L'âge des toutous</a></li>
+        </ol>
+    </section>
+    <!--<section>
+        <div class="container-grid">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+        </div>
+    </section>-->
+    <!-- <section>
+    <div class="container-grid1">
+        <div class="box one">1</div>
+        <div class="box two">2</div>
+        <div class="box three">3</div>
+        <div class="box four">4</div>
+        <div class="box five">5</div>
+        <div class="box six">6</div>
+        <div class="box seven">7</div>
+        <div class="box height">8</div>
+    </div>
+    </section> -->
+    
+    <section>
+        <table>
+            <caption>Enquête</caption>
+            <tr>
+                <th>Noms</th> 
+                <th>Prénoms</th>
+                <th>Âge</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+
+            </tr>
+        </table>
+    </section>
+    <form method="get" action="">
+        <label for="prénom">Votre prénom</label>
+        <input type="text" name="prénom" id="prénom" placeholder="Votre prénom" size="30" maxlength="20">
+        <input type="checkbox" name="frites" id="frites"> <label for="frites">Frites</label>
+        <input type="checkbox" name="steak" id="steak"> <label for="steak">Steak</label>
+        <input type="checkbox" name="panini" id="panini"> <label for="panini">Panini</label>
+        <input type="checkbox" name="salade" id="salade"> <label for="salade">Salade</label>
+    <div>
+        <input type="radio" id="boisson" name="boisson comprise" value="boisson"> <label for="boisson">Boisson</label>
+        <input type="radio" id="sans boisson" name="boisson comprise" value="sans boisson"> <label for="sans boisson">Sans boisson</label>
+      </div>
+<select name="viande" id="type-de-viande"> <label for="type-de-viande">Type de viande</label>
+  <option value="poulet">Poulet</option>
+  <option value="boeuf">Boeuf</option>
+  <option value="poisson">Poisson</option>
+  <fieldset>
+    <legend> Vos coordonnées</legend>
+    <label for="Nom"></label>
+    <input type="text" name="Nom" id="Nom" placeholder="Votre nom" size="30" maxlength="20">
+    <label for="prénom"></label>
+    <input type="text" name="prénom" id="prénom" placeholder="Votre prénom" size="30" maxlength="20">
+    <label for="mail"></label>
+    <input  required="text" name="mail" id="prénom" placeholder="Votre mail" size="30" maxlength="20">
+  </fieldset>
+  <input type="submit" value="send my form">
+  </form>  
+  
+    <div class="bas-de-page">
+        <a href="#ancre"> <i class="fa-solid fa-arrow-up"></i></a>
+        <a href="Navigation/nos toutous adultes.html"><i class="fa-solid fa-arrow-right"></i></a>
+   </div>
+</body>
